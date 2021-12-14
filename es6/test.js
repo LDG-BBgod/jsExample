@@ -1,13 +1,8 @@
-'use strict';
-const sentences = [
-    {subject: 'js', verv: 'is', object: 'great'},
-    {subject: 'ep', verv: 'are', object: 'large'},
-];
+const ch = document.getElementsByClassName('headname')[0];
+ch.innerHTML = "modify";
 
-function say({ subject, verb, object}) {
-    console.log(`${subject} ${verb} ${object}`);
-}
-
-for(let s of sentences) {
-        say(s);
-}
+const p1 = document.createElement('p')
+p1.textContent = "create text1";
+const parent = document.getElementById('content');
+//parent.insertBefore(p1, parent.childNodes[6]);
+parent.appendChild(p1);
